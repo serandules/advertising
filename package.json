@@ -1,0 +1,25 @@
+{
+    "name": "advertising",
+    "description": "advertising",
+    "version": "0.0.0",
+    "author": {
+        "name": "serandives",
+        "email": "serandives@gmail.com"
+    },
+    "dependencies": {
+        "express": "4.*",
+        "mongoose": "4.*",
+        "body-parser": "1.*",
+        "logger": "serandules/logger#master",
+        "clustor": "serandules/clustor#master",
+        "auth": "serandules/auth#master",
+        "procevent": "serandules/procevent#master",
+        "user-service": "serandules/user-service#master",
+        "client-service": "serandules/client-service#master",
+        "token-service": "serandules/token-service#master"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/serandives/advertising.git"
+    }
+}
