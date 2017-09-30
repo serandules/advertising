@@ -8,9 +8,9 @@ var serand = require('serand');
 var dust = require('dustjs-linkedin');
 
 var domain = 'advertising';
-var version = nconf.get('clients')[domain];
-var server = nconf.get('server');
-var cdn = nconf.get('cdn');
+var version = nconf.get('CLIENT_' + domain.toUpperCase());
+var server = nconf.get('SERVER');
+var cdn = nconf.get('CDN');
 
 var app = express();
 
