@@ -3,13 +3,14 @@ var nconf = require('nconf');
 var express = require('express');
 var bodyParser = require('body-parser');
 var auth = require('auth');
+var utils = require('utils');
 var serandi = require('serandi');
 var serand = require('serand');
 var dust = require('dustjs-linkedin');
 
 var domain = 'advertising';
 var version = nconf.get('CLIENT_' + domain.toUpperCase());
-var server = nconf.get('SERVER');
+var server = utils.serverUrl();
 var cdn = nconf.get('CDN');
 
 var app = express();
