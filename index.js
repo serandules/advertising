@@ -63,7 +63,7 @@ module.exports = function (done) {
             //TODO: check caching headers
             dust.render(domain, context, function (err, index) {
                 if (err) {
-                    log.error(err);
+                    log.error('dust:render', err);
                     res.status(500).send({
                         error: 'error rendering requested page'
                     });
@@ -83,7 +83,7 @@ module.exports = function (done) {
             //TODO: check caching headers
             dust.render(domain, context, function (err, index) {
                 if (err) {
-                    log.error(err);
+                    log.error('dust:render', err);
                     res.status(500).send({
                         error: 'error rendering requested page'
                     });
