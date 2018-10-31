@@ -11,7 +11,7 @@ var dust = require('dustjs-linkedin');
 var domain = 'advertising';
 var version = nconf.get('CLIENT_' + domain.toUpperCase());
 var server = utils.serverUrl();
-var cdn = nconf.get('CDN');
+var cdn = nconf.get('CDN_STATICS');
 
 var app = express();
 
