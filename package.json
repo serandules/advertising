@@ -12,7 +12,6 @@
         "body-parser": "1.*",
         "logger": "serandules/logger#master",
         "utils": "serandules/utils#master",
-        "clustor": "serandules/clustor#master",
         "auth": "serandules/auth#master",
         "user-service": "serandules/user-service#master",
         "client-service": "serandules/client-service#master",
